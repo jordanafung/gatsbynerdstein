@@ -6,15 +6,16 @@ import Img from "gatsby-image"
 
 const RecipePage = ({data}) => (
   <Layout>
-    <div>
-      <h1>{data.nodeRecipe.title}</h1>
+    <div class="recipe-main-container">
+      <h1 class="recipe-title">{data.nodeRecipe.title}</h1>
       <i><p className="publication-date">{data.nodeRecipe.created}</p></i>
       <Img fixed={data.nodeRecipe.relationships.field_image.localFile.childImageSharp.fixed} />
-      <div class="details" style={{
+      <div class="details" 
+      /*style={{
           display: 'flex',
           flexDirection: 'column',
           padding: '1em 0',
-      }}>
+      }}*/>
           <h2>Overview</h2>
           <span>Preparation time: {data.nodeRecipe.field_preparation_time}</span>
           <span>Cooking time: {data.nodeRecipe.field_cooking_time}</span>

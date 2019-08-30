@@ -8,8 +8,8 @@ import RecipeTeaser from "../components/recipe-teaser.js"
 
 const RecipeListingPage = ({data}) => (
   <Layout>
-    <SEO title="Recipes" />
-    <h1>Recipes</h1>
+    <SEO title="Recipes from Umami Demo" />
+    <h1 class="page-title">Recipes from Umami Demo</h1>
     { data.allNodeRecipe.edges.map((recipe) => (
     <RecipeTeaser
         key={recipe.node.id}

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby + Drupal 8`,
+    title: `Gatsby + D8 Umami`,
     slogan: `Edited version of gatsby-default-starter`,
-    description: `A demo site made in our Gatsby + Drupal training session at Drupal Camp Chattanooga 2019!`,
+    description: `A demo site made in our Gatsby + Drupal training session at DrupalCamp Chattanooga 2019`,
     author: `jordana (trainer: nerdstein)`,
   },
   plugins: [

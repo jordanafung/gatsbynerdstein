@@ -1,5 +1,7 @@
-/** gatsby-starter-default overrides done by Jordana Fung
-* inline styles copied= after commenting out inline styles and adding classes
+/** 
+  * gatsby-starter-default overrides done by Jordana Fung
+  * sites is for demo and testing purposes
+  * inline styles copied= after commenting out inline styles and adding classes
 */
 
 /* haeder.js */
@@ -9,24 +11,77 @@ header{
 }
 
 h1{
+  color: #f36523;
   margin:0;
 }
-h1 a{
-  color: white;
-  text-decoration: none;
-}
+  h1 a{
+    color: white;
+    text-decoration: none;
+  }
 
 /* layout.js */
-.main{
+.main-container,
+.header-div{
   margin: 0 auto;
-  max-width: 960;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
 }
+.main-container{padding-top:0;}
 
 /* ../templates/recipe-page.js */
 .details{
   display: flex;
   flex-direction: column;
   padding: 1em 0;
+}
+
+/* --EOF inline style copying */
+.main-container a{
+  color: #337ab7;
+ text-decoration: none;
+}
+  .main-container a:hover,
+  .main-container a:focus,
+  .main-container a:active,
+  .main-container a h2:hover,
+  .main-container a h2:focus,
+  .main-container a h2:active{
+    color: #f36523;
+    text-decoration: underline #ffa67d;
+  }
+
+main{
+  margin-bottom: 2em;
+}
+.page-title{
+  margin: 0 0 1em;
+}
+
+.recipe-teaser{
+  margin-top: 3em;
+  background: #fdfdfd;
+  box-shadow: 1px 1px 1px 0 #C1C1C1;
+  min-height: 9em;
+  padding-right: 2em;
+}
+.recipe-teaser-title,
+.recipe-teaser-date{
+  margin-bottom: 0.2em;
+}
+.recipe-teaser-summary{
+  padding: 1em 0;
+}
+
+@media screen and (min-width: 768px){
+  .recipe-teaser .gatsby-image-wrapper{
+    float:left;
+    margin: 0.5em 1em 2em 0;
+  }
+  .recipe-teaser{
+    clear:left;
+  }
+}
+
+footer{
+  text-align: center;
 }

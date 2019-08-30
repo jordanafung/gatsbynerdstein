@@ -31,20 +31,23 @@ const Layout = ({ children }) => (
         siteTitle={data.site.siteMetadata.title}
         siteSlogan={data.site.siteMetadata.slogan}
       />
-        <div class="main"
+        <div class="main-container"
          /* style={{
             margin: `0 auto`,
             maxWidth: 960,
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
           }} 
-          added classes --joredit */
+          added classes */
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <div>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>, Drupal 8 and hosted on Netlify
+            </div>
+           
           </footer>
         </div>
       </>
